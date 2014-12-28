@@ -18,6 +18,14 @@ gem 'activeadmin', github: 'activeadmin'
 
 gem "nokogiri"
 
+gem "heroku"
+
+gem "unicorn"
+
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
 	gem 'byebug'
 end
