@@ -51,4 +51,4 @@ production:
   <<: *default
   database: upbeat_production
   username: upbeat
-  password: <%= ENV['UPBEAT_DATABASE_PASSWORD'] %>
+  password: <%= ENV['DATABASE_URL'] %>
